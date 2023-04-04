@@ -16,4 +16,4 @@ if (inputEl.value.length > 0) {
 
  }
 
-inputEl.addEventListener('input', meaning);
+inputEl.addEventListener('input'.trim, meaning);

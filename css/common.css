@@ -22,9 +22,14 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-gallery {
+.gallery {
 display: flex;
+list-style: none;
+
 }
-js-image {
+.js-list{
+padding-left: 10px;
+}
+.js-image {
 height: 200px;
 }

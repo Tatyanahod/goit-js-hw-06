@@ -11,14 +11,18 @@ const data = (event) => {
     const {
     elements: { email, password }
     } = event.currentTarget;
+   
     
-if (email.value === "" && password.value === "") {
+if (email.value.trim() === "" && password.value.trim() === "") {
 return alert("Всі поля повинні бути заповнені");
 }
     const form = {
         email: email.value,
         password: password.value,
-   }   
+    }  
+  
     event.currentTarget.reset();
-    }
-elementForm.addEventListener("submit", data);
+  console.log(form);
+}
+
+// elementForm.addEventListener("submit", data);
